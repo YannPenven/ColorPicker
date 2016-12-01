@@ -12,6 +12,7 @@
 		B8D661751DF056F6008D8F99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8D661731DF056F6008D8F99 /* Main.storyboard */; };
 		B8D661771DF056F6008D8F99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8D661761DF056F6008D8F99 /* Assets.xcassets */; };
 		B8D6617A1DF056F6008D8F99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8D661781DF056F6008D8F99 /* LaunchScreen.storyboard */; };
+		B8D661821DF05A87008D8F99 /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D661811DF05A87008D8F99 /* ColorPickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		B8D661761DF056F6008D8F99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8D661791DF056F6008D8F99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8D6617B1DF056F6008D8F99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8D661811DF05A87008D8F99 /* ColorPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				B8D6616F1DF056F6008D8F99 /* AppDelegate.swift */,
 				B8D661711DF056F6008D8F99 /* ViewController.swift */,
 				B8D661731DF056F6008D8F99 /* Main.storyboard */,
+				B8D661811DF05A87008D8F99 /* ColorPickerViewController.swift */,
 				B8D661761DF056F6008D8F99 /* Assets.xcassets */,
 				B8D661781DF056F6008D8F99 /* LaunchScreen.storyboard */,
 				B8D6617B1DF056F6008D8F99 /* Info.plist */,
@@ -138,6 +141,7 @@
 			files = (
 				B8D661721DF056F6008D8F99 /* ViewController.swift in Sources */,
 				B8D661701DF056F6008D8F99 /* AppDelegate.swift in Sources */,
+				B8D661821DF05A87008D8F99 /* ColorPickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

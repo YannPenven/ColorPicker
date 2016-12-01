@@ -8,7 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, ColorPickerDelegate {
+    
+    @IBOutlet var backgroundView: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +21,16 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "PickColor" {
+            let destination = segue.destination as! ColorPickerViewController
+            destination.delegate = self
+        }
+    }
 
-
+    func userDidChooseAColor(color: UIColor) {
+        dismiss(animated: true, completion: {self.backgroundView.backgroundColor = color})
+    }
 }
 
