@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, ColorPickerDelegate {
+class ViewController: UIViewController {
     
     @IBOutlet var backgroundView: UIView!
 
@@ -29,8 +29,21 @@ class ViewController: UIViewController, ColorPickerDelegate {
         }
     }
 
+    
+}
+
+extension ViewController: ColorPickerDelegate {
     func userDidChooseAColor(color: UIColor) {
-        dismiss(animated: true, completion: {self.backgroundView.backgroundColor = color})
+        dismiss(animated: true, completion: {})
+        let alertController = UIAlertController(title: "Destructive", message: "Simple alertView demo with Destructive and Ok.", preferredStyle: UIAlertControllerStyle.alert)
+        let DestructiveAction = UIAlertAction(title: "Oui", style: UIAlertActionStyle.destructive) { (result : UIAlertAction) -> Void in
+            self.backgroundView.backgroundColor = color
+        }
+        let nonAction = UIAlertAction(title: "Non", style: UIAlertActionStyle.default)
+        alertController.addAction(DestructiveAction)
+        alertController.addAction(nonAction)
+        self.present(alertController, animated: true, completion: nil)
+        
     }
 }
 

@@ -21,9 +21,9 @@ class ColorPickerViewController: UIViewController {
      orange: R:236 G:102 B:30*/
     
     struct Color {
-        static let redColor = UIColor(red: 129, green: 22, blue: 62, alpha: 0)
-        static let greenColor = UIColor(red: 32, green: 203, blue: 136, alpha: 0)
-        static let orangeColor = UIColor(red: 236, green: 102, blue: 30, alpha: 0)
+        static let redColor = UIColor(red: 129/255, green: 22/255, blue: 62/255, alpha: 1)
+        static let greenColor = UIColor(red: 32/255, green: 203/255, blue: 136/255, alpha: 1)
+        static let orangeColor = UIColor(red: 236/255, green: 102/255, blue: 30/255, alpha: 1)
     }
     
     override func viewDidLoad() {
